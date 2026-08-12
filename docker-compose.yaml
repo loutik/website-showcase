@@ -1,0 +1,8 @@
+services:
+  web:
+    # Test website docker
+    container_name: nginx_test_vitrine
+    image: website-showcase:1.0.6
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
